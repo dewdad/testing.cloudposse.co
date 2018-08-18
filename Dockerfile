@@ -2,7 +2,8 @@ FROM cloudposse/terraform-root-modules:0.5.3 as terraform-root-modules
 
 FROM cloudposse/helmfiles:0.3.1 as helmfiles
 
-FROM cloudposse/geodesic:0.13.2
+#FROM cloudposse/geodesic:0.15.1
+FROM cloudposse/geodesic:dev
 
 ENV DOCKER_IMAGE="cloudposse/testing.cloudposse.co"
 ENV DOCKER_TAG="latest"
